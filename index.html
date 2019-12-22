@@ -1,61 +1,383 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Table</title>
-	<style type="text/css">
-		table, th, td{
-			border:1px solid black; 
-			border-collapse: collapse;
-			padding: 3pt;
-		}
-		th{
-			background-color: gray;
-			color: white;
-			height: 35pt;
-		}
-		td{
-			height: 25pt;
-		}
-		tr.even{
-			background-color: rgb(240,240,240);
-		}
-		tr.uncertain{
-			text-align: right;
-			color: #ff0000;
-			border: 3px solid #ff0000;
-			vertical-align: baseline;
-		}
-	</style>
+<title>Home page</title>
+	<meta charset="UTF-8">
+	<title>ZhangYun's personal homepage</title>
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+<link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
+<link href="css/font-awesome.css" rel="stylesheet"> 
+<link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+<link href="http://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+<link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:400,700italic,700,400italic,300italic,300' rel='stylesheet' type='text/css'>
+<!-- //font -->
+<script src="js/jquery-1.11.1.min.js"></script>
+<script src="js/bootstrap.js"></script>
+<script type="text/javascript">
+	jQuery(document).ready(function($) {
+		$(".scroll").click(function(event){		
+			event.preventDefault();
+			$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+		});
+	});
+</script> 
+ 
+
 </head>
 <body>
-	<h1>Table title</h1>
-	<table style="width:50%;">
-		<tr>
-			<th style="width: 40%;">Firstname</th>
-			<th style="width: 40%;">Lastname</th> 
-			<th style="width: 20%;">Age</th>
-		</tr>
-		<tr>
-			<td>Jill</td>
-			<td>Smith</td> 
-			<td>50</td>
-		</tr>
-		<tr class='even'>
-			<td>Eve</td>
-			<td>Jackson</td> 
-			<td>94</td>
-		</tr>
-		<tr>
-			<td>Adam</td>
-			<td>Parsons</td> 
-			<td>33</td>
-		</tr>
-		<tr class='even uncertain'>
-			<td>Sam</td>
-			<td>Williams</td> 
-			<td>42</td>
-		</tr>
-	</table>
-
-</body>
+	<!-- banner -->
+	<div class="banner" style="padding: 0em 0 1em;">
+		<div class="header">
+			<div class="container">
+				<div class="header-left">
+					<div class="w3layouts-logo">
+						<h1 style="font-size: 15pt;">
+							<a href="index.html">YUN'S <span>homepage</span></a>
+						</h1>
+					</div>
+				</div>
+				<div class="header-right" >
+					<div class="top-nav">
+						<nav class="navbar navbar-default">
+								<div class="navbar-header">
+									<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+										
+										<span class="icon-bar"></span>
+										<span class="icon-bar"></span>
+										<span class="icon-bar"></span>
+									</button>
+								</div>
+							<!-- Collect the nav links, forms, and other content for toggling -->
+							<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+								<ul id="navigation">
+				<li class="selected">
+					<a href="index.html">Home</a>
+				</li>
+				<li>
+					<a href="about me.html">About Me</a>
+				</li>
+				<li>
+			
+					<li class=""><a href="works1.html" class="dropdown-toggle hvr-bounce-to-bottom" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Works<span class="caret"></span></a>
+						<ul class="dropdown-menu" style="width: 50px;width: 40px;margin-left: 180px;font-size: 16px">
+							<li><a class="hvr-bounce-to-bottom" href="my family farm.html">My family farm</a></li>
+							<li><a class="hvr-bounce-to-bottom" href="aboriginal culture.html">Aboriginal </a></li>
+							<li><a class="hvr-bounce-to-bottom" href="shadow play.html">Shadow play</a></li>    
+							<li><a class="hvr-bounce-to-bottom" href="Spider science.html">Spider science</a></li> 
+							
+						</ul>
+				</li>
+				<li>
+					<a href="photos.html">Photos</a>
+				</li>
+				<li>
+					<a href="contact me.html">Contact Me</a>
+				</li>
+			</ul>
+									
+									</li>								
+								</ul>	
+								<div class="clearfix"> </div>
+							</div>	
+						</nav>		
+					</div>
+					<div class="agileinfo-social-grids">
+						<ul>
+							<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+							<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+							<li><a href="#"><i class="fa fa-rss"></i></a></li>
+							<li><a href="#"><i class="fa fa-vk"></i></a></li>
+						</ul>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+		<div class="w3layouts-banner-slider">
+			<div class="container">
+				<div class="slider">
+					<div class="callbacks_container">
+						<ul class="rslides callbacks callbacks1" id="slider4">
+							<li>
+								<div class="agileits-banner-info">
+									<h3 style="font-size: 48pt">Welcome to my homepage <span>Major in interaction design</span></h3>
+									<div class="w3-button">
+										<a href="about me.html">More</a>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="agileits-banner-info">
+									<h3 style="font-size: 48pt">ZhangYun's personal homepage<span>Nanjing University of Art</span></h3>
+									<div class="w3-button">
+										<a href="about me.html">More</a>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<script src="js/responsiveslides.min.js"></script>
+					<script>
+						// You can also use "$(window).load(function() {"
+						$(function () {
+						  // Slideshow 4
+						  $("#slider4").responsiveSlides({
+							auto: true,
+							pager:true,
+							nav:true,
+							speed: 500,
+							namespace: "callbacks",
+							before: function () {
+							  $('.events').append("<li>before event fired.</li>");
+							},
+							after: function () {
+							  $('.events').append("<li>after event fired.</li>");
+							}
+						  });
+					
+						});
+					 </script>
+					<!--banner Slider starts Here-->
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- //banner -->
+	
+	<!-- banner-bottom -->
+	<div class="welcome">
+		<div class="container">
+			<div class="w3ls-heading">
+				<h2 style="font-size: 20pt;font-weight:bolder;">My Recent Works</h2>
+			</div>
+			<div class="welcome-grids">
+				<div class="col-md-6 agile-welcome-grid">
+					<div class="grid">
+						<div class="col-md-6 agileits-left">
+							<figure class="effect-chico">
+								<img src="images/2.jpg" alt="" />
+								<figcaption>
+									<h4>Shadow Puppets</h4>
+									
+								</figcaption>			
+							</figure>
+						</div>
+						<div class="col-md-6 agileits-left">
+							<figure class="effect-chico">
+								<img src="images/3.jpg" alt=" " />
+								<figcaption>
+									<h4>My Family Farm</h4>
+									
+								</figcaption>			
+							</figure>
+						</div>
+						<div class="clearfix"> </div>
+					</div>
+				</div>
+				<div class="col-md-6 agileinfo-welcome-right">
+					<h4>As an excellent interaction designer, I will never forget my original intention, forge ahead and never give up. </h4>
+					<p>I need a lot of time to do, to experience, to taste and I know that design can't be done overnight, so I never complain, because I'm not good enough to do it myself. I want to be an interesting designer, a designer who can really be called design.<span>In the future, UI design is a comprehensive position, which requires designers to not only understand product interaction effect AE 3D, but also master hand-drawing skills. My goal is to keep learning, improve my business level, develop my hobbies, walk in the forefront of the industry and base on user experience. </span></p>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+	</div>
+	<!-- banner-bottom -->
+	<!-- services -->
+	<div class="services">
+		<div class="container">
+			<div class="w3ls-heading">
+				<h3 style="font-size: 20pt;font-weight:bolder;">Services</h3>
+			</div>
+			<div class="wthree-services-grids">
+				<div class="col-md-6 w3ls-about-left">
+					<div class="agileits-icon-grid">
+						<div class="icon-left hvr-radial-out">
+							<i class="fa fa-cog" aria-hidden="true"></i>
+						</div>
+						<div class="icon-right">
+							<h5>WEB DESIGN</h5>
+							<p>Don't be smug in the past achievements, to continue to learn, because the hard disk is bad,only your thoughts and ability to others can not take away.</p>
+						</div>
+						<div class="clearfix"> </div>
+					</div>
+					<div class="agileits-icon-grid">
+						<div class="icon-left hvr-radial-out">
+							<i class="fa fa-heart" aria-hidden="true"></i>
+						</div>
+						<div class="icon-right">
+							<h5>GRAPHIC DESIGN</h5>
+							<p>High vision is low basically because knowledge is too little, stylist avoids by all means impetuous.</p>
+						</div>
+						<div class="clearfix"> </div>
+						</div>
+					<div class="agileits-icon-grid">
+						<div class="icon-left hvr-radial-out">
+							<i class="fa fa-paper-plane" aria-hidden="true"></i>
+						</div>
+						<div class="icon-right">
+							<h5>PHOTOSHOP</h5>
+							<p>The most important things in life are trust and communication, and the same is true in design</p>
+						</div>
+						<div class="clearfix"> </div>
+					</div>
+				</div>
+				<div class="col-md-6 w3ls-about-left">
+					<div class="agileits-icon-grid">
+						<div class="icon-left hvr-radial-out">
+							<i class="fa fa-user" aria-hidden="true"></i>
+						</div>
+						<div class="icon-right">
+							<h5>PROCESSING</h5>
+							<p>Make an effort to meet more good people, and let them know your good, so that the hero will know the hero.</p>
+						</div>
+						<div class="clearfix"> </div>
+					</div>
+					<div class="agileits-icon-grid">
+						<div class="icon-left hvr-radial-out">
+							<i class="fa fa-thumbs-up" aria-hidden="true"></i>
+						</div>
+						<div class="icon-right">
+							<h5>INTERIOR DESIGN</h5>
+							<p>In the inspiration to creativity, in the inspiration to design, in the inspiration to achieve their own designer dream.</p>
+						</div>
+						<div class="clearfix"> </div>
+						</div>
+					<div class="agileits-icon-grid">
+						<div class="icon-left hvr-radial-out">
+							<i class="fa fa-bell" aria-hidden="true"></i>
+						</div>
+						<div class="icon-right">
+							<h5>THE VIDEO CLIP</h5>
+							<p> The perception of life gives art a higher realm and level, and writes into the soul feeling of real existence for art.</p>
+						</div>
+						<div class="clearfix"> </div>
+					</div>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+	</div>
+	<!-- //services -->
+	<!-- news -->
+	<div class="news">
+		<div class="container">
+			<div class="w3ls-heading">
+				<h3 style="font-size: 20pt;font-weight:bolder;">News & Social practice</h3>
+			</div>
+			<div class="w3-agileits-news-grids">
+				<div class="col-md-6 news-left">
+					<div class="w3-agile-news-date">
+						<div class="agile-news-icon">
+							<i class="fa fa-calendar" aria-hidden="true"></i>
+							<p>Aug 04-06</p>
+						</div>
+						<div class="agileits-line"> </div>
+						<div class="agile-news-icon">
+							<a href="#"><i class="fa fa-comments-o" aria-hidden="true"></i></a>
+							<p>Shenzhen province</p>
+						</div>
+						<div class="agileits-line"> </div>
+						<div class="agile-news-icon">
+							<a href="#"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i></a>
+							<p>Feel good</p>
+						</div>
+					</div>
+					<div class="w3-agile-news-img">
+						<a href="summer social practice.html"><img src="images/4.jpg" alt="" /></a>
+						<h4><a href="single.html">"Youth and responsibility peer"—— industrial design college student of NUA party member 2019 summer social practice review</a></h4>
+						<p>Practice is the only way to grow. On the way of learning and seeking knowledge, we look for poems and distant places.</p>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+				<div class="col-md-6 news-right">
+					<div class="news-right-grid">
+						<a href="single.html">The teachers and students of the practice group held the mobilization meeting of the summer social practice activity in NUA</a>
+						<h5>03th Aug,2019</h5>
+						<p>Gao yuan put forward specific requirements, the students listen carefully, full of confidence, looking forward to the battle.</p>
+					</div>
+					<div class="news-right-grid">
+						<a href="single.html">Practice group came to lens technology group to visit and learn</a>
+						<h5>5th Aug,2019</h5>
+						<p>In the session of the on-site communication meeting, we listened carefully and humbly for advice, deeply understood the development history of lens technology group since its establishment, as well as the company's business philosophy and spirit of enterprise staff to show you the workshop samples for everyone to learn.</p>
+					</div>
+					<div class="news-right-grid">
+						<a href="single.html">The company meeting with OPPO</a>
+						<h5>5th Aug,2016</h5>
+						<p>The staff introduced the product design concepts, functions and design highlights of OPPO in the past ten years. </p>
+					</div>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+	</div>
+	<!-- //news -->
+	<!-- footer -->
+	<footer>
+		<div class="container">
+			<div class="agileits-w3layouts-footer-grids">
+				<div class="col-md-4 footer-left">
+					<h3>
+						<a href="index.html">YUN'S <span>Homepage</span></a>
+					</h3>
+					<div class="footer-social-grids">
+						<ul>
+							<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+							<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+							<li><a href="#"><i class="fa fa-rss"></i></a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-md-4 footer-left">
+					<h4>Navigation</h4>
+					<div class="col-md-6 footer-grid-left">
+						<ul>
+							<li><a class="active" href="index.html">Home page</a></li>
+							<li><a href="about me.html">About me</a></li>								
+							<li><a href="works1.html">Works</a></li>
+							<li><a href="photos.html">Photos</a></li>
+						</ul>
+					</div>
+					<div class="col-md-6 footer-grid-left">
+						<ul>
+							
+							<li><a href="contact me.html">Contact me</a></li>
+						</ul>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+	</footer>
+	<!-- footer -->
+	<!-- copyright -->
+	
+	<script src="js/responsiveslides.min.js"></script>
+	<script src="js/SmoothScroll.min.js"></script>
+<script type="text/javascript" src="js/move-top.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>
+	<!-- here stars scrolling icon -->
+	<script type="text/javascript">
+		$(document).ready(function() {
+			/*
+				var defaults = {
+				containerID: 'toTop', // fading element id
+				containerHoverID: 'toTopHover', // fading element hover id
+				scrollSpeed: 1200,
+				easingType: 'linear' 
+				};
+			*/
+								
+			$().UItoTop({ easingType: 'easeOutQuart' });
+								
+			});
+			$(document).ready(function(){
+				$(document).off('click.bs.dropdown.data-api');
+			});
+	</script>
+<!-- //here ends scrolling icon -->
+</body>	
 </html>
